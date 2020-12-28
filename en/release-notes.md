@@ -1,5 +1,13 @@
 ## Dev Tool > Deploy > Release Notes
 
+### October 27, 2020
+#### Feature Updates
+
+* Added the feature to deploy apps to Auto Scale service
+  * Auto Scale-type server groups can now be created and mapped to a scenario
+  * A user distribution feature for the Auto Scale group
+* Added a feature to be used to check the execution of deployment
+  * Check if the deployment should be executed before executing a deployment
 ### August 25, 2020
 #### Feature Updates
 * Shows time data at the start and end stamp of a log monitoring task 
