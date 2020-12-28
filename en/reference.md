@@ -99,6 +99,7 @@ Applicable to categorize binaries deployed for each server tool, such as Develop
 
 Deployment target servers can be managed by group. 
 Based on the phase attribute, it is applicable to categorize server tool, such as Develop, Staging, and Product. 
+Deploy can be configured in accordance with the scale-up of Auto Scale service instances.
 
 ![deploy_ref_07_2018.png](https://static.toastoven.net/prod_tcdeploy/deploy_ref_07_2018.png)
 
@@ -148,6 +149,31 @@ Server information can be added or deleted from **Create (Modify) Server Group**
 
 * Uncheck the left box, or click **Delete** on the right. 
 * Click **Create**: to modify, click **Modify**. 
+
+#### Adding Auto Scale group
+
+![autoscale_01.png](https://static.toastoven.net/prod_tcdeploy/reference/autoscale_01.png)
+
+* Click **Deploy** > **Create Server Group** or **Server Group > Create New**
+  * Enter the name (required) and description (optional).
+  * Select an OS and specify Shell Type. They can be selected from the list or entered manually.
+  * Select Phase. Specify the server hardware. If you don't want to specify it, select NONE.
+  * Select **Auto Scaling Server Group** from Group Type.
+  * Select the scaling group created by the Auto Scale service in Scaling Group.
+  * Select a scenario to be run in an instance when the scaling group of the scale-out scenario scales out.
+  * Click the **Create**  button.
+
+##### Adding a scale-out scenario
+
+![autoscale_02.png](https://static.toastoven.net/prod_tcdeploy/reference/autoscale_02.png)
+
+* Click the **Add Scenario**  button from the Create Group dialog box.
+* Select an Artifact that contains the scenario to be run.
+* Select the scenario to run.
+* Multiple scenarios can be selected.
+* Click the **OK**  button.
+* Adjust the run priorities of the added scenarios. If some scenarios have the same priority, they are run in random order.
+* Click the **Create**  button. 
 
 ### Resources 
 
