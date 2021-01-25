@@ -1,5 +1,23 @@
 ## Dev Tool > Deploy > Release Notes
 
+### January 26, 2021
+
+#### Feature Updates
+
+- Links with the instance disposal feature when Auto Scale service-integrated deployment fails
+  - Scaled-out instances are disposed when deployment fails while scaling out in the Auto Scale service
+  - The scale-out feature stops working when scale-out deployment fails three times or more
+
+### November 24, 2020
+
+#### Feature Updates
+
+- Added the feature to deploy apps in linkage with the Auto Scale service (except for the US region)
+  - Auto Scale-type server groups can now be created and mapped to a scenario
+  - Implemented a user distribution feature for the Auto Scale group
+- Added a feature to be used to check the execution of deployment
+  - Checks the availability of a deployment before it is executed
+
 ### August 25, 2020
 #### Feature Updates
 * Shows time data at the start and end stamp of a log monitoring task 
@@ -16,7 +34,7 @@
 * Service Integration with TOAST Cloud Trail 
     * TOAST Cloud Trail can check user events that occur on Deploy console  
 
-### Feb. 25, 2020
+### February 25, 2020
 #### Feature Updates
 * Added the feature of default region setting for binary groups, when an artifact is created
     * Region (KR1/JP1) can be specified for binary groups when an artifact is created
@@ -25,14 +43,14 @@
 #### Bug Fixes
 * Fixed invalid binary group key setting for a binary task, when a scenario is uploaded
 
-### Dec. 24, 2019
+### December 24, 2019
 #### Feature Updates
 * Added Region for Binary Groups
     * To be specified when a binary is created 
     * Download from the storage of an integrated region when downloading and deploying a binary
 * Apply expiration time for clients' downloading pages 
 
-### Sept. 24, 2019 
+### September 24, 2019 
 #### Feature Updates 
 * Added message that binary deployment fails due to inaccessible network 
 
